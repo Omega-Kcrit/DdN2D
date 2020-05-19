@@ -10,6 +10,7 @@ public class GridController : MonoBehaviour
 
     public Grid grid;
     public Tilemap rocasCavar;
+    public GameObject player;
     
 
     public Camera Camera;
@@ -26,8 +27,10 @@ public class GridController : MonoBehaviour
         {
             Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Debug.Log(string.Format("Co-ords of mouse is [X: {0} Y: {0}]", pos.x, pos.y));
-         
+         if(Vector2.Distance(pos,player.transform.position)<1.5f)
             rocasCavar.SetTile(grid.WorldToCell(pos),null);
+         //rocasCavar.HasTile(grid.WorldToCell(pos));
+         
         }
     }
 }
