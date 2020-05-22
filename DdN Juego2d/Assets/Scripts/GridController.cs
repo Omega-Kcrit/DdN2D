@@ -9,7 +9,7 @@ public class GridController : MonoBehaviour
 
 
     public Grid grid;
-    public Tilemap rocasCavar, muro,oro,Explodium,RocaDura;
+    public Tilemap rocasCavar, muro, oro, Explodium, RocaDura, Teleport;
     public TileBase rocaEntera, rocaRota,RocaLava;
     public GameObject player;
     
@@ -47,6 +47,26 @@ public class GridController : MonoBehaviour
                 }else if (oro.HasTile(grid.WorldToCell(pos)))
                 {
                     player.GetComponent<Character>().addcoin();
+                }else if (Teleport.HasTile(grid.WorldToCell(pos)))
+                {
+                    if (pos.x<player.transform.position.x)
+                    {
+                        var newpos = grid.WorldToCell(pos);
+                        Debug.Log(grid.WorldToCell(pos).x);
+                        newpos.x += 15;
+                        Debug.Log(newpos.x);
+                        rocasCavar.SetTile(newpos, null);
+                        player.transform.position = new Vector3(newpos.x,player.transform.position.y,0);
+                    }
+                    else
+                    {
+                        var newpos = grid.WorldToCell(pos);
+                        Debug.Log(grid.WorldToCell(pos).x);
+                        newpos.x -= 15;
+                        Debug.Log(newpos.x);
+                        rocasCavar.SetTile(newpos, null);
+                        player.transform.position = new Vector3(newpos.x,player.transform.position.y,0);
+                    }
                 }
                
                 
