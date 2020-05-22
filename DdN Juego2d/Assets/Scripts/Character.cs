@@ -29,32 +29,22 @@ public class Character : MonoBehaviour
 
     public bool reachedCheckpoint;
 
-    // Start is called before the first frame update
     void Start()
     {
         rgb = GetComponent<Rigidbody2D>();
         checkPoint = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-        //rgb.AddForce(movement * speed);
         rgb.velocity = new Vector3(moveHorizontal * speed, rgb.velocity.y, moveVertical * speed);
-        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-        {
-            //SceneManager.LoadScene(0);
-        }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
-            //gridController.onLevelUp();
-            
-
             if (grounded)
             {
                 rgb.AddForce(Vector2.up * 250);
@@ -72,11 +62,6 @@ public class Character : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-     
-    }
-
     public void addcoin()
     {
         coins++;
@@ -91,9 +76,6 @@ public class Character : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.CompareTag("Ground")) grounded = true;
-
-        
-        
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -102,9 +84,7 @@ public class Character : MonoBehaviour
         {
             checkPoint = transform.position;
             reachedCheckpoint = true;
-
-        }
-                
+        }               
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
