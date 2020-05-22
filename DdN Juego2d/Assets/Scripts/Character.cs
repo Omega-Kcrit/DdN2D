@@ -29,26 +29,27 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
-    }
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
 
-    private void FixedUpdate()
-    {
-        float moveHorizontal = Input.GetAxis ("Horizontal");
-        float moveVertical = Input.GetAxis ("Vertical");
-        
-        Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
-        rgb.AddForce(movement * speed);
-        if (Input.GetKeyDown(KeyCode.DownArrow)||Input.GetKeyDown(KeyCode.S))
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
+        //rgb.AddForce(movement * speed);
+        rgb.velocity = new Vector3(moveHorizontal * speed, rgb.velocity.y, moveVertical * speed);
+        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
             SceneManager.LoadScene(0);
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow)||Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
-            gridController.onLevelUp();
+            //gridController.onLevelUp();
+            rgb.AddForce(Vector2.up * 300);
         }
+    }
+
+    private void FixedUpdate()
+    {
+        
     }
 
     public void addcoin()
