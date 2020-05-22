@@ -9,7 +9,8 @@ public class Character : MonoBehaviour
 {
     private Rigidbody2D rgb;
     public float speed;
-    
+
+    public Vector2 checkPoint;
     
     private int coins=0;
     public Text cointext;
@@ -20,10 +21,17 @@ public class Character : MonoBehaviour
     public GridController gridController;
 
     public Vector2 mov;
+
+    public bool canDoubleJump;
+    public bool grounded = true;
+    public Transform topLeft;
+    public Transform bottomRight;
+
     // Start is called before the first frame update
     void Start()
     {
         rgb = GetComponent<Rigidbody2D>();
+        checkPoint = transform.position;
     }
 
     // Update is called once per frame
@@ -37,19 +45,34 @@ public class Character : MonoBehaviour
         rgb.velocity = new Vector3(moveHorizontal * speed, rgb.velocity.y, moveVertical * speed);
         if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
-            SceneManager.LoadScene(0);
+            //SceneManager.LoadScene(0);
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
             //gridController.onLevelUp();
-            rgb.AddForce(Vector2.up * 300);
+            
+
+            if (grounded)
+            {
+                rgb.AddForce(Vector2.up * 250);
+                canDoubleJump = true;
+                grounded = false;
+            }
+            else
+            {
+                if (canDoubleJump)
+                {
+                    canDoubleJump = false;
+                    rgb.AddForce(Vector2.up * 200);
+                }
+            }
         }
     }
 
     private void FixedUpdate()
     {
-        
+     
     }
 
     public void addcoin()
@@ -61,5 +84,22 @@ public class Character : MonoBehaviour
     {
         level++;
         Leveltext.text = level.ToString();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("Ground")) grounded = true;
+
+        
+        
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        checkPoint = transform.position;
+    }
+    private void Die()
+    {
+        transform.position = checkPoint;
     }
 }
