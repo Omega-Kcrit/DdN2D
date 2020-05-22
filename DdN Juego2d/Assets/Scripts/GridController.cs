@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class GridController : MonoBehaviour
 {
@@ -13,9 +14,11 @@ public class GridController : MonoBehaviour
     public TileBase rocaEntera, rocaRota,RocaLava, lavaTile;
     public GameObject player;
 
-    public float timer = 7;
+    public float timer = 11;
 
     public int lavaPos = -5;
+
+    public Text timerText;
 
     public Camera Camera;
     // Start is called before the first frame update
@@ -29,16 +32,15 @@ public class GridController : MonoBehaviour
     {
         if (timer < 0)
         {
-            timer = 7;
+            timer = 11;
             onLevelUp();
         }
 
         timer -= Time.deltaTime;
-      
+        timerText.text = timer.ToString();
 
         if (Input.GetMouseButtonDown(0))
         {
-
             
             Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Debug.Log(grid.WorldToCell(pos).y);
