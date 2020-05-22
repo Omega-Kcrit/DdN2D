@@ -27,6 +27,8 @@ public class Character : MonoBehaviour
     public Transform topLeft;
     public Transform bottomRight;
 
+    public bool reachedCheckpoint;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -94,12 +96,35 @@ public class Character : MonoBehaviour
         
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        checkPoint = transform.position;
+        if (other.CompareTag("Checkpoint"))
+        {
+            checkPoint = transform.position;
+            reachedCheckpoint = true;
+
+        }
+                
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Lava"))
+        {
+            Debug.Log("Alo");
+            Die();
+        }
+    }
+
     private void Die()
     {
+        if(!reachedCheckpoint) SceneManager.LoadScene(0);
+        else
+        {
+            transform.position = checkPoint;
+            gridController.updateLava();
+        }
         transform.position = checkPoint;
+
     }
 }
