@@ -1,0 +1,391 @@
+fileFormatVersion: 2
+guid: f69da1ab780929f4998124f9238a64cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 128891950949474747
+    second: "\u2014Pngtree\u2014golden number png transparent layer_4006430_0"
+  - first:
+      213: 4293596766934091115
+    second: "\u2014Pngtree\u2014golden number png transparent layer_4006430_1"
+  - first:
+      213: -7745075322689242950
+    second: "\u2014Pngtree\u2014golden number png transparent layer_4006430_2"
+  - first:
+      213: -1533800543545131072
+    second: "\u2014Pngtree\u2014golden number png transparent layer_4006430_3"
+  - first:
+      213: 1201786459395213180
+    second: "\u2014Pngtree\u2014golden number png transparent layer_4006430_4"
+  - first:
+      213: 8681792441148281516
+    second: "\u2014Pngtree\u2014golden number png transparent layer_4006430_5"
+  - first:
+      213: -5231075726649410577
+    second: "\u2014Pngtree\u2014golden number png transparent layer_4006430_6"
+  - first:
+      213: 5864459185381082631
+    second: "\u2014Pngtree\u2014golden number png transparent layer_4006430_7"
+  - first:
+      213: 4727056139718455110
+    second: "\u2014Pngtree\u2014golden number png transparent layer_4006430_8"
+  - first:
+      213: 2205149242852072553
+    second: "\u2014Pngtree\u2014golden number png transparent layer_4006430_9"
+  - first:
+      213: -4155176018298848960
+    second: "\u2014Pngtree\u2014golden number png transparent layer_4006430_10"
+  - first:
+      213: 6217828017497458180
+    second: "\u2014Pngtree\u2014golden number png transparent layer_4006430_11"
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014golden number png transparent layer_4006430_0"
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 904
+        width: 168
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb120c6eb8ae9c100800000000000000
+      internalID: 128891950949474747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014golden number png transparent layer_4006430_1"
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 904
+        width: 129
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b654fd5d28be59b30800000000000000
+      internalID: 4293596766934091115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014golden number png transparent layer_4006430_2"
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 905
+        width: 167
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8b6787707f38490800000000000000
+      internalID: -7745075322689242950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014golden number png transparent layer_4006430_3"
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 902
+        width: 169
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cff0b53888d6bae0800000000000000
+      internalID: -1533800543545131072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014golden number png transparent layer_4006430_4"
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 528
+        width: 184
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c774020ea6a9da010800000000000000
+      internalID: 1201786459395213180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014golden number png transparent layer_4006430_5"
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 528
+        width: 175
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca290542a3ceb7870800000000000000
+      internalID: 8681792441148281516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014golden number png transparent layer_4006430_6"
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 529
+        width: 174
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febb4ef875c7767b0800000000000000
+      internalID: -5231075726649410577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014golden number png transparent layer_4006430_7"
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 529
+        width: 146
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7068a60de8eb26150800000000000000
+      internalID: 5864459185381082631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014golden number png transparent layer_4006430_8"
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 164
+        width: 172
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f6f399380e99140800000000000000
+      internalID: 4727056139718455110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014golden number png transparent layer_4006430_9"
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 164
+        width: 175
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c5be09d834a9e10800000000000000
+      internalID: 2205149242852072553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014golden number png transparent layer_4006430_10"
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 164
+        width: 129
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049331a2d69d556c0800000000000000
+      internalID: -4155176018298848960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014golden number png transparent layer_4006430_11"
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 164
+        width: 168
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406486173a92a4650800000000000000
+      internalID: 6217828017497458180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

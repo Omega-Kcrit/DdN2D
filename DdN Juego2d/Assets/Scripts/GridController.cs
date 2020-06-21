@@ -94,6 +94,8 @@ public class GridController : MonoBehaviour
         for (int i = -15; i < 15; i++) lava.SetTile(grid.WorldToCell(new Vector3(posOld.x, lavaPos, 0) + new Vector3(i, 0, 0)), lavaTile);
 
         lavaPos++;
+        player.GetComponent<Character>().addLevel();
+        
 
     }
 
