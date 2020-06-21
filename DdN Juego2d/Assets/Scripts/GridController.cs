@@ -10,7 +10,7 @@ public class GridController : MonoBehaviour
 
 
     public Grid grid;
-    public Tilemap rocksToDig, wall, gold, explodium, hardRock, teleport, lava;
+    public Tilemap rocksToDig, wall, gold, explodium, hardRock, teleport, lava,check;
     public TileBase wholeRock, brokenRock, lavaRock, lavaTile;
     public GameObject player;
 
@@ -71,6 +71,15 @@ public class GridController : MonoBehaviour
                         rocksToDig.SetTile(newpos, null);
                         player.transform.position = new Vector3(newpos.x,player.transform.position.y,0);
                     }
+                }else if (explodium.HasTile(grid.WorldToCell(pos)))
+                {
+                    for (int f = grid.WorldToCell(pos).x-5; f < grid.WorldToCell(pos).x + 5; f++)
+                    {
+                        for (int c = grid.WorldToCell(pos).y - 5; c < grid.WorldToCell(pos).y + 5; c++)
+                        {
+                            rocksToDig.SetTile(new Vector3Int(f,c,0), null);
+                        }
+                    }
                 }                              
             }         
         }
@@ -102,6 +111,11 @@ public class GridController : MonoBehaviour
         {
             for (int i = -15; i < 15; i++) lava.SetTile(grid.WorldToCell(new Vector3(posOld.x, j, 0) + new Vector3(i, 0, 0)), null);
         }
+    }
+
+    public void checkPont()
+    {
+        check.ClearAllTiles();
     }
 
     }

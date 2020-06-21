@@ -12,6 +12,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CameraLookAt.cs" t="Include" />
           <e p="Character.cs" t="Include" />
           <e p="GridController.cs" t="Include" />
         </e>

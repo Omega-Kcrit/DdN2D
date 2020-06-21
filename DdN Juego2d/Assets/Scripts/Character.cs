@@ -84,6 +84,7 @@ public class Character : MonoBehaviour
         {
             checkPoint = transform.position;
             reachedCheckpoint = true;
+            gridController.checkPont();
         }               
     }
 
